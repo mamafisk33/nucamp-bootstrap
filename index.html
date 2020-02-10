@@ -40,6 +40,16 @@
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
           </div>
+          <!-- looks like video, and looks better: <div class="col-md-4 col-xl-2">-->
+          <!-- what instructions said, but looks worse: <div class="col-sm-4 col-xl-2">-->
+          <div class="col-md-4 col-xl-2">
+            <a
+              href="#reserveForm"
+              class="btn btn-info btn-lg mt-4"
+              role="button"
+              >Reserve Campsite</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -85,7 +95,7 @@
     </nav>
 
     <div class="container">
-      <!-- 1st row -->
+      <!-- 1st row pic - Our Campsites descrip - Discover -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Discover & Review</h2>
@@ -107,8 +117,9 @@
           </div>
         </div>
       </div>
+      <!-- end row row-content for 1st row -->
 
-      <!-- 2nd row -->
+      <!-- 2nd row Featured - React Lake descrip - pic-->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 col-md-3">
           <h2>Featured Campsites</h2>
@@ -132,10 +143,10 @@
           </div>
         </div>
       </div>
-      <!-- row row-content for 2nd row -->
+      <!-- end row row-content for 2nd row -->
 
+      <!-- 3rd row Booststrap pic - Bootstrap Outfitters - Our Partners - -->
       <div class="row row-content align-items-center">
-        <!-- 3rd row -->
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Our Community Partners</h2>
         </div>
@@ -157,6 +168,64 @@
           </div>
         </div>
       </div>
+      <!-- end row row-content for 3rd row -->
+
+      <!-- 4th row card containing reserve form -->
+      <div class="row row-content align-items-center justify-content-center">
+        <!-- instructions say use col-sm-6 but that is: good xs, too narrow sm, too narrow md, ok lg -->
+        <!-- this looks better than video: <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">-->
+        <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
+          <div class="card">
+            <h3 class="card-header bg-info text-white">
+              Reserve a Campsite
+            </h3>
+            <div class="card-body">
+              <form id="reserveForm">
+                <div class="form-group row">
+                  <label for="numCampers" class="col-sm-6 col-form-label"
+                    >Number of Campers</label
+                  >
+                  <div class="col">
+                    <select
+                      class="form-control"
+                      name="numCampers"
+                      id="numCampers"
+                    >
+                      <option selected>Select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="date" class="col-sm-6 col-form-label">Date</label>
+                  <div class="col-sm-6">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      name="date"
+                      placeholder="mm/dd/yyyy"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row row-content for 4th row -->
     </div>
 
     <footer class="site-footer">
