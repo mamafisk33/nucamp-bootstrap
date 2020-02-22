@@ -23,5 +23,11 @@ $(function() {
         .children("i")
         .addClass("fa-pause");
     }
-  });
+  }); //end carouselButton
+  $("#reserveButton").click(function() {
+    $("#reserveModal").modal();
+  }); //end reserveButtpn
+  $("#loginButton").click(function() {
+    $("#loginModal").modal();
+  }); //end login
 });
